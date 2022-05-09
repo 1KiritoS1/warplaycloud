@@ -145,6 +145,26 @@ button, input, select, option, textarea {
 		z-index: 1;
 		transform: translateX(-50%);
 	}
+
+	&.image {
+		background: url('../img/hero/hero.png') no-repeat top center
+		/ cover fixed;
+	}
+
+	&.image1 {
+		background: url('../img/hero/hero-1.png') no-repeat top center
+		/ cover fixed;
+	}
+
+	&.image2 {
+		background: url('../img/hero/hero-2.png') no-repeat top center
+		/ cover fixed;
+	}
+
+	&.image3 {
+		background: url('../img/hero/hero-3.png') no-repeat top center
+		/ cover fixed;
+	}
 }
 
 .hero__content {
@@ -723,7 +743,7 @@ button, input, select, option, textarea {
 
 		&.fixed {
 			opacity: 1;
-			
+
 			&:before {
 				height: 100%;
 			}
