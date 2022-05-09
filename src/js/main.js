@@ -26,6 +26,24 @@ $(function() {
 		});
 	}
 
+	//* --- Changing images --- *//
+	// const hero = document.querySelector('.hero');
+	// const images = ['image1', 'image2', 'image3'];
+
+	window.onload = () => {
+		const hero = $('.hero');
+		const images = ['image', 'image1', 'image2', 'image3'];
+		let counter = 0;
+
+		setInterval(() => {
+			counter++;
+			hero.fadeOut(300, function() {
+  				hero.removeClass(images.join(' ')).addClass(images[counter % images.length]).fadeIn(500); 
+			});
+		}, 5000);
+	}
+
+
 	//* --- Burger --- *//
 	const burger = document.querySelector('.header__burger');
 	const burgerMenu = document.querySelector('.nav');
@@ -58,4 +76,3 @@ $(function() {
 		});
 	});
 });
-
